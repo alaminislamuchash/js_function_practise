@@ -2,17 +2,18 @@
 👉 উদাহরণ: "1010010" → {zeros: 4, ones: 3}
  */
 function count_zero_one(string) {
-  let count = 0;
+  let zero = 0;
+  let one = 0;
 
   for (let number of string) {
     if (number === "0") {
-      count++;
+      zero++;
     } else if (number === "1") {
-      count++;
+      one++;
     }
   }
-  return count;
+  return { Zeros: zero, Ones: one };
 }
-const binarynumber = "1010010";
+const binarynumber = "10100100101111";
 const result = count_zero_one(binarynumber);
 console.log(result);

@@ -9,6 +9,6 @@ function count_one(string) {
   }
   return count;
 }
-const binarynumber = "1000100100100010101";
+const binarynumber = "1000100100100010101111111";
 const result = count_one(binarynumber);
 console.log(result);
